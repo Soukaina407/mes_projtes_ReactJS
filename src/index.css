@@ -1,0 +1,508 @@
+/* Style global pour la navbar */
+.navbar-menu {
+  display: flex;
+  justify-content: space-evenly; /* Équilibrer les éléments horizontalement */
+  align-items: center;
+  background-color: #9b683f; /* Couleur plus sombre (dark) */
+  padding: 16px 32px; /* Padding plus large pour un effet plus spacieux */
+  border-radius: 8px; /* Coins légèrement plus arrondis */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus nette */
+  margin: 20px auto; /* Centré avec une marge sur les côtés */
+  max-width: 1000px; /* Largeur maximale */
+}
+
+/* Style pour chaque élément de menu */
+.menu-item {
+  color: #e2e8f0; /* Texte clair */
+  font-size: 1rem; /* Taille de police plus petite */
+  font-weight: 500; /* Poids de police normal mais un peu accentué */
+  padding: 12px 20px; /* Padding horizontal et vertical ajusté */
+  border-radius: 4px; /* Coins arrondis plus subtils */
+  text-decoration: none; /* Enlever la soulignement */
+  display: inline-block; /* Permet de donner une largeur spécifique */
+  transition: all 0.3s ease; /* Transition fluide pour les effets au survol */
+  text-transform: uppercase; /* Texte en majuscules */
+}
+
+/* Effet de survol pour les éléments de menu */
+.menu-item:hover {
+  background-color: #939391; /* Fond vert au survol */
+  color: #fff; /* Texte en blanc au survol */
+  transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+/* Effet lorsque le lien est actif */
+.menu-item:active {
+  background-color: #388e3c; /* Fond vert plus foncé quand l'élément est actif */
+  transform: scale(1); /* Ne pas agrandir quand cliqué */
+}
+
+
+
+.product-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ac8661;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Chaque produit */
+.product-item {
+  list-style-type: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  background-color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Centrer le contenu dans chaque carte */
+}
+
+/* Titre principal */
+.product-item h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Éléments individuels */
+.product-item li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Image de produit */
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Hover effects */
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour les en-têtes du tableau */
+.product-table th {
+  background-color: #f4f4f4;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Style pour les cellules du tableau */
+.product-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les lignes du tableau */
+.product-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style pour les images dans le tableau */
+.product-table img {
+  max-width: 100%;
+  height: auto;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #fff;
+}
+
+option {
+  padding: 10px;
+}
+
+.table-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #4c77af;
+  color: white;
+  text-transform: uppercase;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.styled-table tr:hover {
+  background-color: #ddd;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.delete-button {
+  background-color: #ff4d4f; /* Couleur rouge */
+  color: white; /* Texte blanc */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.delete-button:hover {
+  background-color: #e63946; /* Rouge plus foncé */
+  transform: scale(1.05); /* Agrandir légèrement */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Accentuer l'ombre */
+}
+
+.delete-button:active {
+  background-color: #d32f2f; /* Rouge encore plus foncé */
+  transform: scale(0.95); /* Réduire légèrement */
+  color: #7fa4cc;
+}
+
+/* Conteneur principal */
+.menu-container {
+  background-color: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+  font-family: 'Arial', sans-serif;
+  height: 1000px;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #444;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f5fb4;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color:#1f5fb4;
+}
+
+.navbar-cta .cta-button {
+  margin-left: 15px;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1f5fb4;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-cta .cta-button:hover {
+  background-color: #1f5fb4;
+}
+
+/* Section principale */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #000; /* Fond noir */
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #1f5fb4; /* Couleur titre */
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+  background-color: #1f5fb4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #1f5fb4;
+}
+
+.hero-btn.secondary {
+  background-color: transparent;
+  color: #1f5fb4;
+  border: 2px solid #1f5fb4;
+}
+
+.hero-btn.secondary:hover {
+  background-color: #ff7f50;
+  color: #000;
+}
+
